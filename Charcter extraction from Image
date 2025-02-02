@@ -1,0 +1,17 @@
+from PIL import Image
+import pytesseract
+
+# Path to your Tesseract installation
+# Change this to the correct path where Tesseract is installed
+pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'  # For Windows
+# For Mac or Linux, use: /usr/local/bin/tesseract or /usr/bin/tesseract
+
+# Open an image using PIL
+image_path = 'path_to_image.png'  # Replace with your image path
+img = Image.open(image_path)
+
+# Extract text using pytesseract
+extracted_text = pytesseract.image_to_string(img)
+
+# Print the extracted text
+print(extracted_text)
