@@ -1,6 +1,6 @@
-Here's your updated README with emojis! 🌟 Let me know if you need any modifications. 🚀  
 
----
+
+
 
 # **Image Text Extraction 🖼️🔍**
 
